@@ -12,6 +12,7 @@ public class Main {
         int[] array = createNumberArray(size, lowestNumber, highestNumber);
 
         Pattern1();
+        Pattern2();
 
     }
 
@@ -37,6 +38,7 @@ public class Main {
         int number = (int) ((Math.random() * (highestNumber - lowestNumber + 1)) + lowestNumber);
         return number;
     }
+    //initial condition, conditional, incrementor/decrementor
     public static void Pattern1(){
         for(int rows=0; rows < 6; rows++) {
 
@@ -46,6 +48,18 @@ public class Main {
             System.out.println();
         }
 
+        System.out.println();
+    }
+
+    public static void Pattern2(){
+        for(int n=1; n < 7; n++){
+
+            for(int row=1; row < 8; row++){
+
+                System.out.print(n);
+            }
+            System.out.println();
+        }
     }
 
 
