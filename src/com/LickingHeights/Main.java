@@ -13,6 +13,7 @@ public class Main {
 
         Pattern1();
         Pattern2();
+        Pattern3();
 
     }
 
@@ -60,6 +61,20 @@ public class Main {
             }
             System.out.println();
         }
+        System.out.println();
+    }
+
+    public static void Pattern3(){
+        for(int b=1; b < 7; b++){
+
+            for(int row=1; row<7; row++){
+
+                System.out.print(row);
+
+            }
+            System.out.println();
+        }
+        System.out.println();
     }
 
 
