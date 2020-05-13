@@ -15,6 +15,7 @@ public class Main {
         Pattern2();
         Pattern3();
         Pattern4();
+        Pattern5();
 
     }
 
@@ -34,7 +35,6 @@ public class Main {
             System.out.println(array[i]);
         }
     }
-
     public static int createRandomNumber(int lowestNumber, int highestNumber) {
 
         int number = (int) ((Math.random() * (highestNumber - lowestNumber + 1)) + lowestNumber);
@@ -79,7 +79,14 @@ public class Main {
             }
         System.out.println();
         }
-
+    public static void Pattern5() {
+        for (int rows = 1; rows <= 6; rows++) {
+            for (int columns = 1; columns <= rows; columns++) {
+                System.out.print(columns);
+            }
+            System.out.println();
+        }
+    }
 
 
 
