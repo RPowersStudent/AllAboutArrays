@@ -32,6 +32,11 @@ public class Main {
         String[] times = {"midnight", "8am", "noon", "bed time" };
         String[] things = {"computer", "cat", "wires", "ball of tinfoil"};
         sentenceGenerator(adjectives, places, people, verbs, times, things);
+        System.out.println(" ");
+        String[] partsOfAName1 = {"Little ", "Big ", "Young ", "MC "};
+        String[] partsOfAName2 = {"Blue ", "Killah ", "Chrome ", "Kid "};
+        String[] partsOfAName3 = {"the Man", "the Legend", "the Gangsta", "the Rich"};
+        print80sRapperName(partsOfAName1, partsOfAName2, partsOfAName3);
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -147,6 +152,9 @@ public class Main {
     public static String randomWord(String[] array) {
         Random random = new Random();
         return array[random.nextInt(array.length)];
+    }
+    public static void print80sRapperName(String[] partsOfAName1, String[] partsOfAName2, String[] partsOfAName3){
+        System.out.print(randomWord(partsOfAName1)+  randomWord(partsOfAName2)+ randomWord(partsOfAName3));
     }
 
 
