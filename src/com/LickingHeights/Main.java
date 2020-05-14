@@ -17,6 +17,7 @@ public class Main {
         Pattern4();
         Pattern5();
         System.out.println("The sum of the array is "+sum(array));
+        System.out.println("the sum of the array is "+minimum(array));
 
     }
 
@@ -89,16 +90,21 @@ public class Main {
         }
         System.out.println();
     }
-
     public static int sum(int[] array){
         int sum = 0;
-
         for(int i=0; i<array.length; i++){
             sum += array[i];
-
         }
-
         return sum;
+    }
+    public static int minimum(int[] array){
+        int minimum=array[0];
+        for(int i=1;i<array.length;i++){
+            if(minimum>array[i]){
+                minimum=array[i];
+            }
+        }
+        return minimum;
     }
 
 
