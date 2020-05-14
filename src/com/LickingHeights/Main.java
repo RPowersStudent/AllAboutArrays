@@ -31,6 +31,7 @@ public class Main {
         String[] verbs = {"sleeping", "bleeding", "texting", "shaking"};
         String[] times = {"midnight", "8am", "noon", "bed time" };
         String[] things = {"computer", "cat", "wires", "ball of tinfoil"};
+        sentenceGenerator(adjectives, places, people, verbs, times, things);
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -138,6 +139,14 @@ public class Main {
             }
         }
         return array;
+    }
+    public static void sentenceGenerator(String[] adjectives, String[] places, String[] people, String[] verbs, String[] times, String[] things){
+        System.out.print("I was "+randomWord(verbs)+" down the "+randomWord(places)+" around "+randomWord(times)+" with my \n " +
+                "best friend "+randomWord(people)+ " and we "+randomWord(verbs)+" a "+randomWord(adjectives)+(" ") +randomWord(things));
+    }
+    public static String randomWord(String[] array) {
+        Random random = new Random();
+        return array[random.nextInt(array.length)];
     }
 
 
