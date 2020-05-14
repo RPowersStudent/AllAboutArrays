@@ -1,5 +1,7 @@
 package com.LickingHeights;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -23,6 +25,12 @@ public class Main {
         bubbleSort(array);
         System.out.println("After Bubble Sort");
         printArray(array);
+        String[] adjectives = {"small", "happy", "fat", "fluffy"};
+        String[] places = {"Reynoldsburg", "Berlin", "the park", "my house"};
+        String[] people = {"My mom", "my dad", "Breanna Little", "Istambul Abdi"};
+        String[] verbs = {"sleeping", "bleeding", "texting", "shaking"};
+        String[] times = {"midnight", "8am", "noon", "bed time" };
+        String[] things = {"computer", "cat", "wires", "ball of tinfoil"};
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -131,6 +139,7 @@ public class Main {
         }
         return array;
     }
+
 
 
 }
