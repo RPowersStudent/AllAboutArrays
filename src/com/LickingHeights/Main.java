@@ -19,7 +19,10 @@ public class Main {
         System.out.println("The sum of the array is "+sum(array));
         System.out.println("The minimum of the array is "+minimum(array));
         System.out.println("The maximum of the array is "+maximum(array));
-
+        printArray(array);
+        bubbleSort(array);
+        System.out.println("After Bubble Sort");
+        printArray(array);
     }
 
     public static int[] createNumberArray(int size, int lowestNumber, int highestNumber) {
@@ -115,6 +118,18 @@ public class Main {
             }
         }
         return maximum;
+    }
+    public static int[] bubbleSort(int[] array) {
+        for(int i = 0; i < array.length - 1; i++){
+            for(int j = i + 1; j < array.length; j++){
+                if (array[i] > array[j]){
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+        return array;
     }
 
 
